@@ -33,8 +33,12 @@ def factorial_recursive(n):
         raise ValueError('n must be greater or equal than 0')
     return 1 if n <= 1 else n * factorial_recursive(n-1)
 
+def check_factorial(factorial, x, y):
+    assert_equal(factorial(x), y)
 
 def test_factorial():
+    "" # I should file a report/check why it doesn't report arguments
+       # if docstring is present
     """
     Test that both implementations of factorial work.
     """
@@ -44,7 +48,7 @@ def test_factorial():
 
     for factorial in implementations:
         for x, y in results:
-            assert_equal(factorial(x), y)
+            yield check_factorial, factorial, x, y
 
 
 def timethis(fn, *args):
