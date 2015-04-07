@@ -39,13 +39,15 @@ run.
 
 ## HOWTO
 
-- "Clone" this repository on GitHub
+- "Fork" (which is really just a GitHub term for "clone" on GitHub
+  site, no "git clone" to be done to local drive), this repository on
+  GitHub
 
-- In the terminal run
+- In the terminal now run
 
-       git clone https://github.com/YOURLOGIN/psyc161-hw1
+        git clone https://github.com/YOURLOGIN/psyc161-hw1
 
-  to clone your remote clone to your local drive
+    to "clone" your remote fork/clone to your local drive
 
 - Edit file `factorial.py` which provides a skeleton for your work
 
